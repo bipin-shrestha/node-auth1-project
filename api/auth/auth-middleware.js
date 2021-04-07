@@ -7,6 +7,12 @@
   }
 */
 function restricted() {
+  try{
+
+  }
+  catch(){
+
+  }
 
 }
 
@@ -19,7 +25,12 @@ function restricted() {
   }
 */
 function checkUsernameFree() {
+  try{
 
+  }
+  catch(){
+    
+  }
 }
 
 /*
@@ -31,7 +42,12 @@ function checkUsernameFree() {
   }
 */
 function checkUsernameExists() {
+  try{
 
+  }
+  catch(){
+    
+  }
 }
 
 /*
@@ -43,7 +59,12 @@ function checkUsernameExists() {
   }
 */
 function checkPasswordLength() {
+  try{
 
+  }
+  catch(){
+    
+  }
 }
 
 // Don't forget to add these to the `exports` object so they can be required in other modules
