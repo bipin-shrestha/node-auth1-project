@@ -102,7 +102,7 @@ router.get('/logout', (req, res, next) =>{
       }
     });
   } else {
-    res.end();
+    res.status(200).json({ message : "no session" });
   }
 });
  
