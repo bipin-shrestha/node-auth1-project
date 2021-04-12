@@ -46,11 +46,12 @@ exports.checkUsernameFree = async (req, res, next) => {
 */
 exports.checkUsernameExists = async (req, res, next) => {
 
-  const user = await usersModel.findBy({ username: req.body.username })
+  const user = await usersModel.findBy({ username: req.body.username });
+
    if(user.length > 0){
-    res.status(401).json({message: "Invalid credentials"})
+    next();
    }else {
-     next();
+     res.status(401).json({message: "Invalid credentials"});
    }
 }
 
